@@ -90,7 +90,7 @@ POST /_plugins/_ml/models/_register
 ```json
 POST /_plugins/_ml/models/_register
 {
-  "name": "Bedrock text embedding model",
+  "name": "YC text embedding model",
   "function_name": "remote",
   "description": "test model",
   "connector_id": "nzh9PIsBnGXNcxYpPEcv"
@@ -117,7 +117,7 @@ POST /_plugins/_ml/models/CzEou5oBdUNOOrVA10Db/_predict
 }
 ```
 
-Sample response of Yadex Cloud AI Studio Embedding:
+Sample response of Yandex Cloud AI Studio Embedding:
 
 ```json
 {
