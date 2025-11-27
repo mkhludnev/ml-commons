@@ -86,17 +86,6 @@ POST /_plugins/_ml/models/_register
 }
 ```
 
-
-```json
-POST /_plugins/_ml/models/_register
-{
-  "name": "YC text embedding model",
-  "function_name": "remote",
-  "description": "test model",
-  "connector_id": "nzh9PIsBnGXNcxYpPEcv"
-}
-```
-
 Sample response:
 ```json
 {
