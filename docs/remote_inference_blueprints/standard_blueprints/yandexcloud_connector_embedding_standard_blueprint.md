@@ -21,7 +21,7 @@ PUT /_cluster/settings
 
 Refer to [Yandex Cloud AI Studio Embeddings API docs](https://aistudio.yandex.ru/docs/en/ai-studio/embeddings/createEmbedding.html).
 
-### 2d. Create connector for document embedding
+### 2.1. Create connector for document embedding
 
 ```json
 POST /_plugins/_ml/connectors/_create
@@ -60,7 +60,7 @@ Sample response:
 Note:
 * Replace all `<placeholders>` in the preceding code snippet with appropriate values, while preserving `${curly braces}` syntax exactly as shown. Short-lived [bearer tokens](https://yandex.cloud/en/docs/iam/concepts/authorization/iam-token) (valid ~12 hours) may be used as an alternative to [API keys](https://yandex.cloud/en/docs/iam/concepts/authorization/api-key). API keys must be granted either `yc.ai.languageModels.execute` or `yc.ai.foundationModels.execute` roles. Also refer to [the guide](https://yandex.cloud/en/docs/ai-studio/security/).
 
-### 2q. Create connector for query embedding
+### 2.2. Create connector for query embedding
 
 Due to Yandex Cloud using distinct [models](https://yandex.cloud/en/docs/ai-studio/concepts/embeddings) for query processing and document processing, separate connectors are required for each purpose. To create the query processing connector, duplicate the connector definition above and replace `text-search-doc` with `text-search-query`.
 
