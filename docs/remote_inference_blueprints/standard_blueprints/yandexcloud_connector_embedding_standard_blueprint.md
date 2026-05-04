@@ -2,20 +2,7 @@
 
 This blueprint demonstrates how to deploy a Yandex Cloud AI Studio embedding models. 
 
-## 1. Allow connection to Yandex Cloud
-
-```json
-PUT /_cluster/settings
-{
-  "persistent": {
-    "plugins.ml_commons.trusted_connector_endpoints_regex": [
-      "^https://llm\\.api\\.cloud\\.yandex\\.net/.*$"
-    ]
-  }
-}
-```
-
-## 2. Create connector for Yandex Cloud Embeddings:
+## 1. Create connector for Yandex Cloud Embeddings:
 
 
 ```json
@@ -58,7 +45,7 @@ Sample response:
 }
 ```
 
-## 3. Register model & deploy model:
+## 2. Register model & deploy model:
 
 ```json
 POST /_plugins/_ml/model_groups/_register
@@ -106,7 +93,7 @@ Sample response:
 }
 ```
 
-## 4. Test model inference
+## 3. Test model inference
 
 ```json
 POST /_plugins/_ml/models/CzEou5oBdUNOOrVA10Db/_predict
